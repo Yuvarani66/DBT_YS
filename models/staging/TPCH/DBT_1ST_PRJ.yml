@@ -6,10 +6,11 @@ sources:
     schema: TPCH_SF1
     tables:
       - name: CUSTOMER
+      - name: ORDERS
 
 models:
   - name: demo_sales
-    description: "Bring DEMO_SALES_INF data in to the model"
+    description: "Bring Customer data in to the model"
     columns:
       - name: C_ACCTBAL
       - name: C_ADDRESS
@@ -19,3 +20,8 @@ models:
       - name: C_NAME
       - name: C_NATIONKEY
       - name: C_PHONE
+  - name: orders_sales
+    description: "Bring Order data in to the model"
+    columns:
+      - name: O_ORDERKEY
+      - name: O_TOTALPRICE
