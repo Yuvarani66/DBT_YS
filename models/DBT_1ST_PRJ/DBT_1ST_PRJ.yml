@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: public
+    description: "public schema of YUVA_DBA"
+    database: YUVA_DBS
+    schema: public
+    tables:
+      - name: DEMO_SALES_INF
+
+models:
+  - name: demo_sales
+    description: "Bring DEMO_SALES_INF data in to the model"
+    columns:
+      - name: REGION
+      - name: REP
+      - name: ITEM
