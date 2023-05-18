@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: TPCH_SF1
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: CUSTOMER
+
+models:
+  - name: demo_sales
+    description: "Bring DEMO_SALES_INF data in to the model"
+    columns:
+      - name: C_ACCTBAL
+      - name: C_ADDRESS
+      - name: C_COMMENT
+      - name: C_CUSTKEY
+      - name: C_MKTSEGMENT
+      - name: C_NAME
+      - name: C_NATIONKEY
+      - name: C_PHONE
